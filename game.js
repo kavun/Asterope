@@ -14,7 +14,8 @@
 			});
 
 			$(window).resize(function() {
-				Game.init('canvas');
+				CANVAS_WIDTH = canvasElement.width = $(window).width();
+				CANVAS_HEIGHT = canvasElement.height = $(window).height();			
 			});
 		}
 	}
